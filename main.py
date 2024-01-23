@@ -2,13 +2,7 @@ import modulos.ui.menu as m
 import modulos.glosario as g
 import os
 glosario = {
-    "A" :{
-    },
-    "B" :{},
-    "C" :{},
-    "D" :{},
-    "E" :{},
-    "F" :{}
+
 }
 isActive = True
 while isActive:
@@ -16,12 +10,10 @@ while isActive:
     op = m.MenuPrincipal()
     if (op == 1):
         g.AddWord(glosario)
-        print(glosario)
-        os.system('pause')
     elif (op == 2):
-        pass
+        g.SeachWord(glosario)
     elif (op == 3):
-        pass
+        g.DelWord(glosario)
     elif (op == 4):
         isActive = False
     else:
